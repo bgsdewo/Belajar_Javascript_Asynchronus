@@ -218,4 +218,14 @@
 // const req = hello()
 // console.log(req)
 
-//Topic Sembilan Fungsi Await Keyword
+//Topic Sepuluh Fungsi Asycn Await Keyword
+// async function requestHandler() {
+//   try {
+//     let result = await requestPromise("movie.com");
+//     console.log(result);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// console.log(requestHandler());
