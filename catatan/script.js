@@ -7,3 +7,12 @@
 // };
 
 // console.log(pythagoras(3, 4, 5));
+
+//Topic Dua Faktanya Javascript Itu Single Thread
+// console.log("Bakal muncul pertama");
+// setTimeout(() => {
+//   console.log(
+//     "ini udah masuk memory tapi baru dijalankan setelah 3 detik kedepan"
+//   );
+// }, 3000);
+// console.log("Bakal muncul kedua");
