@@ -201,10 +201,11 @@
 // console.log(req);
 
 //Topic Delapan Fungsi Async Keyword
-const hello = async () => {
-  throw "Maaf gak kenal";
-  //   return "Hello World";
-};
+
+// const hello = async () => {
+//   throw "Maaf gak kenal";
+//   //   return "Hello World";
+// };
 
 // hello()
 //   .then((res) => {
@@ -216,3 +217,5 @@ const hello = async () => {
 
 // const req = hello()
 // console.log(req)
+
+//Topic Sembilan Fungsi Await Keyword
