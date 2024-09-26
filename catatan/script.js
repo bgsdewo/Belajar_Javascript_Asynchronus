@@ -199,3 +199,20 @@
 
 // const req = contohPromise();
 // console.log(req);
+
+//Topic Delapan Fungsi Async Keyword
+const hello = async () => {
+  throw "Maaf gak kenal";
+  //   return "Hello World";
+};
+
+// hello()
+//   .then((res) => {
+//     console.log("response", res);
+//   })
+//   .catch((err) => {
+//     console.log("error", err);
+//   });
+
+// const req = hello()
+// console.log(req)
