@@ -51,20 +51,6 @@
 //   }, delay);
 // };
 
-// // Promise version
-// const requestPromise = (url) => {
-//   return new Promise((resolve, reject) => {
-//     const delay = Math.floor(Math.random() * 4500) + 500;
-//     setTimeout(() => {
-//       if (delay > 2000) {
-//         reject("Error: Connection Timeout");
-//       } else {
-//         resolve(`Success: ${url} (${delay}ms)`);
-//       }
-//     }, delay);
-//   });
-// };
-
 // requestCallback(
 //   "movie.com",
 //   function (response) {
@@ -110,3 +96,58 @@
 //     console.log("Error", error);
 //   }
 // );
+
+//Topic Lima Latihan Request Pakai Promise
+// // Promise version
+// const requestPromise = (url) => {
+//   return new Promise((resolve, reject) => {
+//     const delay = Math.floor(Math.random() * 4500) + 500;
+//     setTimeout(() => {
+//       if (delay > 2000) {
+//         reject("Error: Connection Timeout");
+//       } else {
+//         resolve(`Success: ${url} (${delay}ms)`);
+//       }
+//     }, delay);
+//   });
+// };
+
+//nampilin secara console
+// let request = requestPromise("google.com");
+// console.log(request);
+//nampilin secara broswer
+// requestPromise("movie.com")
+//   .then((response) => {
+//     console.log("success", response);
+//     requestPromise("movie.com")
+//       .then((response) => {
+//         console.log("success", response);
+//         requestPromise("movie.com")
+//           .then((response) => {
+//             console.log("success", response);
+//             requestPromise("movie.com")
+//               .then((response) => {
+//                 console.log("success", response);
+//                 requestPromise("movie.com")
+//                   .then((response) => {
+//                     console.log("success", response);
+//                   })
+//                   .catch((error) => {
+//                     console.log("error", error);
+//                   });
+//               })
+//               .catch((error) => {
+//                 console.log("error", error);
+//               });
+//           })
+//           .catch((error) => {
+//             console.log("error", error);
+//           });
+//       })
+//       .catch((error) => {
+//         console.log("error", error);
+//       });
+//   })
+//   .catch((error) => {
+//     console.log("error", error);
+//   });
