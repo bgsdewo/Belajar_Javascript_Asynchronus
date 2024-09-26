@@ -1,0 +1,4 @@
+/* create body transition color */
+body {
+  transition: background-color 1s ease;
+}

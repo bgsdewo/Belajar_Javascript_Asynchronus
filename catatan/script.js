@@ -184,3 +184,18 @@
 //   .catch((err) => {
 //     console.log(err);
 //   });
+
+//Topic Tujuh Cara Membuat Promise
+// const contohPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     resolve(() => {
+//       "berhasil";
+//     });
+//     reject(() => {
+//       "gagal";
+//     });
+//   });
+// };
+
+// const req = contohPromise();
+// console.log(req);
